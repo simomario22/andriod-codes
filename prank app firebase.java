@@ -16,6 +16,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
+//   add  compile 'com.google.firebase:firebase-database:11.0.2'  to gradel
+
 public class Main5Activity extends AppCompatActivity {
 
     private DatabaseReference  mdatabase;
@@ -51,6 +54,7 @@ public class Main5Activity extends AppCompatActivity {
 
          //  progressdialog  ...
         mProgressDialog = new ProgressDialog(this);
+        mProgressDialog.setCanceledOnTouchOutside(false);
         mProgressDialog.setTitle("Load..");
         mProgressDialog.setMessage("wait ...");
         mProgressDialog.show();
